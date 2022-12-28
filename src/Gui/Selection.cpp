@@ -936,8 +936,9 @@ void SelectionSingleton::setPreselectCoord( float x, float y, float z)
                     ,pts[1].first, pts[1].second.c_str()
                     ,pts[2].first, pts[2].second.c_str());
 
-    if (getMainWindow())
-        getMainWindow()->showMessage(QString::fromUtf8(buf));
+
+    //if (getMainWindow())
+    //    getMainWindow()->showMessage(QString::fromUtf8(buf));
 }
 
 void SelectionSingleton::rmvPreselect(bool signal)

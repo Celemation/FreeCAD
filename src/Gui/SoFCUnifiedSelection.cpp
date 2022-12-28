@@ -503,7 +503,7 @@ bool SoFCUnifiedSelection::setHighlight(SoFullPath *path, const SoDetail *det,
                 ,pts[1].first,pts[1].second.c_str()
                 ,pts[2].first,pts[2].second.c_str());
 
-        getMainWindow()->showMessage(QString::fromUtf8(buf));
+        //getMainWindow()->showMessage(QString::fromUtf8(buf));
 
         int ret = Gui::Selection().setPreselect(docname,objname,element,x,y,z);
         if(ret<0 && currenthighlight)
